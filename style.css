@@ -55,6 +55,33 @@ body {
     flex: 1 1 0;
 }
 
+
+.card{
+    max-width: 200px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 2px 450px;
+    flex: 1;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color:#1F2937;
+}
+
+
 header {
     display: flex;
     background-color: #1F2937;
@@ -63,6 +90,22 @@ header {
     color: #F9FAF8;
     font-size: 24px;
     padding: 2px 450px;
+}
+
+.Grey{
+    padding: 100px 450px;
+    background-color: #E5E7EB;
+    font-size: 36px;
+}
+
+.Grey>*:first-child{
+    text-align: left;
+}
+
+.Grey>*:nth-child(2){
+    text-align: right;
+    font-weight:300;
+    font-style: italic;
 }
 
 .Logo{
