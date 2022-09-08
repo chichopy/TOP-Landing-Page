@@ -1,3 +1,5 @@
 # TOP-Landing-Page
 
-The Odin Project Lading page assignment.
+In this landing page one can find information about Van Gogh most famous paintings.
+
+Images were obtained from Wikimedia Commons.
