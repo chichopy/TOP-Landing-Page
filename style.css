@@ -1,174 +1,155 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 .azul-marino {
-    display: flex;
-    gap: 120px;
-    background-color: #1F2937;
-    padding: 100px 450px;
-    justify-content: space-between;
     align-items: flex-start;
+    gap: 120px;
+    padding: 100px 450px;
 }
 
-.azul-marino .title{
-    max-width: 300px;
-}
-
-.azul-marino .title{
-    font-size: 40px;
-    font-weight: 800;
-    color: #F9FAF8;
-}
-
-.azul-marino .description{
-    color: #E5E7EB;
-    font-size: 18px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.azul-marino .image-wrapper{
-    max-width: 500px;
-}
-
-.azul-marino .image-wrapper img{
-    width: 100%;
-    height: auto;
-}
-
-.azul-marino button{
+.azul-marino button {
     background-color: #3882f6;
-    color: white;
-    padding: 10px 30px;
-    border-radius: 8px;
     border: none;
-    font-weight: bold;
+    border-radius: 8px;
     font-size: 14px;
+    padding: 10px 30px;
 }
 
 .azul-marino button:hover {
     cursor: pointer;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1 1 0;
+.azul-marino .description {
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-.card{
+.azul-marino .image-wrapper{
+    max-width: 500px;
+}
+
+.azul-marino .image-wrapper img {
+    height: auto;
+    width: 100%;
+}
+
+.azul-marino .title {
+    font-size: 40px;
+    max-width: 300px;
+}
+
+.azul-marino, header {
+    background-color: #1F2937;
+    justify-content: space-between;
+}
+
+.azul-marino .description, footer, li a, .White button {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.azul-marino, body, .card ul, .cards, header, ul, .White{
+    display: flex;
+}
+
+.azul-marino .title, .azul-marino button, .container h1, header, .Logo, .White, .White button {
+    color: #F9FAF8;
+    font-weight: 800;
+}
+
+body {
+    flex: 1 1 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.card {
     max-width: 200px;
 }
-.card ul{
-    display: flex;
+
+.card ul {
     flex-direction: column;
     gap: 10px;
 }
 
-.card img{
-    width: 100%;
-    overflow: hidden;
+.card img {
     height: 263px;
+    overflow: hidden;
+    width: 100%;
 }
 
-.cards{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
+.cards, footer, header {
     padding: 2px 450px;
-    flex: 1;
 }
 
 .container h1 {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 800;
     color:#1F2937;
+    font-size: 36px;
+    text-align: center;
 }
 
 .container>*:nth-child(2) {
-    margin-top: 20px;
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
-footer{
+footer {
     background-color: #1F2937;
-    font-size: 18px;
-    color: #E5E7EB;
-    padding: 2px 450px;
     text-align: center;
 }
 
-
-.Grey{
-    padding: 100px 450px;
+.Grey {
     background-color: #E5E7EB;
     font-size: 36px;
+    padding: 100px 450px;
 }
 
-.Grey>*:first-child{
+.Grey>*:first-child {
     text-align: left;
 }
 
-.Grey>*:nth-child(2){
+.Grey>*:nth-child(2) {
     text-align: right;
     font-weight:300;
     font-style: italic;
 }
 
-header {
-    display: flex;
-    background-color: #1F2937;
-    justify-content: space-between;
+header, .White {
     align-items: center;
-    color: #F9FAF8;
     font-size: 24px;
-    padding: 2px 450px;
 }
 
-img {
+img, .White button {
     border-radius: 5px;
 }
 
-li a {
-    text-decoration: none;
-    color: #E5E7EB;
-    font-size: 18px;
-}
-
-.Logo{
-    font-weight: 800;
-}
 ul {
-    display: flex;
-    list-style-type: none;
     gap: 20px;
 }
 
-.White{
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    margin: 100px 450px;
+.White {
     background-color: #3882f6;
     border-radius: 10px;
+    gap: 40px;
+    margin: 100px 450px;
     padding: 40px 100px;
-    color: #F9FAF8;
-    font-size: 24px;
-    font-weight: 800;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.White button{
-    width: 100px;
-    height: 30px;
+.White button {
     background-color: inherit;
-    color: #F9FAF8;
     border: 2px solid #F9FAF8;
-    border-radius: 5px;
-    font-size: 18px;
+    height: 30px;
+    width: 100px;
 }
