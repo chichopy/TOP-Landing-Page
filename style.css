@@ -17,7 +17,7 @@
 }
 
 .azul-marino .title{
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 800;
     color: #F9FAF8;
 }
@@ -48,6 +48,10 @@
     font-size: 14px;
 }
 
+.azul-marino button:hover {
+    cursor: pointer;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -55,9 +59,13 @@ body {
     flex: 1 1 0;
 }
 
-
 .card{
     max-width: 200px;
+}
+.card ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .card img{
@@ -65,9 +73,6 @@ body {
     overflow: hidden;
     height: 263px;
 }
-
-
-
 
 .cards{
     display: flex;
@@ -85,20 +90,19 @@ body {
     color:#1F2937;
 }
 
+.container>*:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
 
-header {
-    display: flex;
+footer{
     background-color: #1F2937;
-    justify-content: space-between;
-    align-items: center;
-    color: #F9FAF8;
-    font-size: 24px;
+    font-size: 18px;
+    color: #E5E7EB;
     padding: 2px 450px;
+    text-align: center;
 }
 
-img {
-    border-radius: 5px;
-}
 
 .Grey{
     padding: 100px 450px;
@@ -116,6 +120,26 @@ img {
     font-style: italic;
 }
 
+header {
+    display: flex;
+    background-color: #1F2937;
+    justify-content: space-between;
+    align-items: center;
+    color: #F9FAF8;
+    font-size: 24px;
+    padding: 2px 450px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+li a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
 .Logo{
     font-weight: 800;
 }
@@ -123,12 +147,6 @@ ul {
     display: flex;
     list-style-type: none;
     gap: 20px;
-}
-
-li a {
-    text-decoration: none;
-    color: #E5E7EB;
-    font-size: 18px;
 }
 
 .White{
@@ -142,7 +160,7 @@ li a {
     color: #F9FAF8;
     font-size: 24px;
     font-weight: 800;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .White button{
@@ -153,12 +171,4 @@ li a {
     border: 2px solid #F9FAF8;
     border-radius: 5px;
     font-size: 18px;
-}
-
-footer{
-    background-color: #1F2937;
-    font-size: 18px;
-    color: #E5E7EB;
-    padding: 2px 450px;
-    text-align: center;
 }
